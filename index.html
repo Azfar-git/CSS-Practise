@@ -4,7 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>CSS selector</title>
+    <style>
+      /* element selector */
+      div {
+        background-color: red;
+      }
+      /* class selector */
+      .yellow {
+        background-color: yellow;
+      }
+      /* Id selector */
+      #green {
+        background-color: green;
+      }
+      /* child selector  */
+      div > p {
+        color: wheat;
+      }
+      /* descendant Selector  Working       */
+      div span p {
+        background-color: blue;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <h1>Selector working</h1>
+    <div>I am div coloring through element selector</div>
+    <div class="yellow">i am another div with working by class selector</div>
+    <div id="green">i am work with id selector</div>
+    <div>
+      <!-- this child selector -->
+      <p>this child selector</p>
+      <span><p>this descendant Selector</p></span>
+    </div>
+  </body>
 </html>
