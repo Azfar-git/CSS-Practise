@@ -26,6 +26,19 @@
       div span p {
         background-color: blue;
       }
+      /* this is universal selector */
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      /* pseudo selector */
+
+      a:visited {
+        color: green;
+      }
+      a:link {
+        color: purple;
+      }
     </style>
   </head>
   <body>
@@ -38,5 +51,7 @@
       <p>this child selector</p>
       <span><p>this descendant Selector</p></span>
     </div>
+    <a href="https://www.google.com">Google.com</a>
+    <a href="https://www.facebook2.com">facebook.com</a>
   </body>
 </html>
